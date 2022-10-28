@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cipher_iv2264"
+version = "0.1.0"
+description = "A package to encrypt and decrypt Ceasar cipher"
+authors = ["Aimee Vichiennet"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
