@@ -1,4 +1,4 @@
-from cipher_iv2264 import cipher_iv2264
+from cipher_vichiennet_aimee.cipher_iv2264.src.cipher_iv2264.cipher_iv2264 import cipher
 
 import pytest
 
