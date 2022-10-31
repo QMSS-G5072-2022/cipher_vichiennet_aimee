@@ -5,11 +5,11 @@ def cipher(text, shift, encrypt=True):
     Parameters
     ----------
     text : string
-      Enter a string to encrpyt or decrypt.
-    shift : integer
+      Enter a string to encrypt or decrypt.
+    shift : integer != 0
       Input a positive or negative integer to indicate the positional shift of the alphabets.
-    encrypt : bool
-      Indicate a Boolean value of True to encrpyt or False to decrypt the text.
+    encrypt : bool, default=True
+      Indicate a Boolean value of True to encrypt or False to decrypt the text.
 
 
     Returns
@@ -19,16 +19,13 @@ def cipher(text, shift, encrypt=True):
 
     Examples
     --------
-    To encrypt the text
-    >>> from cipher_iv2264 import cipher_iv2264
     >>> cipher_iv2264.cipher('Hello',2, encrypt=True)
     'Jgnnq'
 
-    To decypt the text
-    >>> from cipher_iv2264 import cipher_iv2264
     >>> cipher_iv2264.cipher('Jgnnq',-2, encrypt=False)
     'Hello'
     """
+    
     assert isinstance(shift, int)
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
